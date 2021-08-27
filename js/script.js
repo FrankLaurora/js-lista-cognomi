@@ -1,10 +1,14 @@
-var lastNameList = ["bianchi", "neri", "rossi", "verdi", "gialli"];
+var lastNameList = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 
 var yourLastName = prompt("Qual è il tuo cognome?").toLowerCase();
 
+yourLastName = yourLastName.charAt(0).toUpperCase() + yourLastName.slice(1);
+
+console.log(yourLastName);
+
 lastNameList.push(yourLastName);
 
-lastNameList = lastNameList.sort();
+lastNameList.sort();
 
 console.log(lastNameList);
 
